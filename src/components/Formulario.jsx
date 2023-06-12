@@ -31,7 +31,6 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if ([nombre, propietario, email, fecha, sintomas].includes('')) {
-            console.log('campo vacio')
             setError(true)
             return;
         }
